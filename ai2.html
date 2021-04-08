@@ -16,11 +16,30 @@
     
     <script type="text/javascript" src="cal.js"></script>
     <title>AI Recognition</title>
-    <button onclick="EnterFullscreen()">Fullscreen</button>
-    <button onclick="ExitFullscreen()">Exit</button>
+    <button id = FullscreenButton onclick="EnterFullscreen()" style="
+    background-color: transparent;background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;">-</button>
+    <!-- <button onclick="ExitFullscreen()">Exit</button> -->
 </head>
 <body>
   <script>
+    // var simulateClick = function (elem) {
+    //   // Create our event (with options)
+    //   var evt = new MouseEvent('click', {
+    //     bubbles: true,
+    //     cancelable: true,
+    //     view: window
+    //   });
+    //   // If cancelled, don't dispatch our event
+    //   var canceled = !elem.dispatchEvent(evt);
+    // };
+    // // var someLink = document.querySelector('a');
+    // var someLink = document.getElementById("FullscreenButton");
+    // simulateClick(someLink);
+    
     function EnterFullscreen() {
       document.documentElement.requestFullscreen();
     }
