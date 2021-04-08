@@ -1,0 +1,34 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style02.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    
+    <script type="text/javascript" src="cal.js"></script>
+    <title>AI Recognition</title>
+    <button onclick="EnterFullscreen()">Fullscreen</button>
+    <button onclick="ExitFullscreen()">Exit</button>
+</head>
+<body>
+  <script>
+    function EnterFullscreen() {
+      document.documentElement.requestFullscreen();
+    }
+    function ExitFullscreen() {
+      document.exitFullscreen();
+    }    
+  </script>
+   <div id = "webcam-container"></div>
+   <div class="title"id="label-container">AI Recognition</div>
+</body>
+</html>
