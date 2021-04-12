@@ -49,29 +49,57 @@ async function predict() {
             
             if(prediction[i].className=="sausage" && value >= 0.7)
             {
-                document.getElementById("label-container").innerHTML = "ian-tshiâng"
+                
+                document.getElementById("label_container").innerHTML = "ian-tshiâng"
+    
+                document. getElementById("aivoice12") ;
+                document. getElementsByClassName("sausage") ;
+                aivoice12.play();
             }
+
+            
             else if(prediction[i].className=="riceSausage" && value >= 0.7)
             {
-               document.getElementById("label-container").innerHTML = "bí-tn̂g"
+               document.getElementById("label_container").innerHTML = "bí-tn̂g"
+
+               document. getElementById("aivoice13") ;
+                document. getElementsByClassName("riceSausage") ;
+                // label_container.onclick = function(){
+                 aivoice13.play();
             }
             else if(prediction[i].className=="driedTofu" && value >= 0.7)
             {
-               document.getElementById("label-container").innerHTML = "tāu-kuann"
+               document.getElementById("label_container").innerHTML = "tāu-kuann"
+
+                document. getElementById("aivoice14") ;
+                document. getElementsByClassName("driedTofu") ;
+                // label_container.onclick = function(){
+                 aivoice14.play();
             }
             else if(prediction[i].className=="tempura" && value >= 0.7)
             {
-                document.getElementById("label-container").innerHTML = "oo-lián"
+                document.getElementById("label_container").innerHTML = "oo-lián"
+
+                document. getElementById("aivoice15") ;
+                document. getElementsByClassName("tempura") ;
+                // label_container.onclick = function(){
+                 aivoice15.play();
             }
             else if(prediction[i].className=="bloodPudding" && value >= 0.7)
-            {
-                console.log("bí-hueh");
+            {   
+                 document.getElementById("label_container").innerHTML = "bí-hueh"
+                
+
+                document. getElementById("aivoice16") ;
+                document. getElementsByClassName("bloodPudding") ;
+                // label_container.onclick = function(){
+                 aivoice16.play();
             }
             else if(prediction[i].className=="other" && value >= 0.7)
             {
-                document.getElementById("label-container").innerHTML = "koh hip tsi̍t-pái"
+                document.getElementById("label_container").innerHTML = "koh hip tsi̍t-pái"
             }
 
         // labelContainer.childNodes[i].innerHTML = classPrediction;
-    }
+}
 }

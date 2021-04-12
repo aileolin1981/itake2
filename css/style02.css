@@ -6,21 +6,25 @@
 body {
     margin: 0;
     padding: 0;
-    width: 360px;
+    /* width: 360px; */
     height: 738px;
     position: fixed;
     background-color: white;
 }
 
-#label-container {
+#label_container {
     font-family: 'Segoe UI';
     font-size: 24px;
     font-weight: bold;
     color: #4FB4A2;
-    position: absolute;
-    bottom: 16px;
-    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    /* width: 360px; */
     height: 88px;
     line-height: 88px;
-    text-align: center;
+}
+.out{
+    width: 360px;
 }

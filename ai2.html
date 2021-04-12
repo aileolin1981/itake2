@@ -16,13 +16,13 @@
     
     <script type="text/javascript" src="cal.js"></script>
     <title>AI Recognition</title>
-    <button id = FullscreenButton onclick="EnterFullscreen()" style="
+    <div id = FullscreenButton onclick="EnterFullscreen()" style="
     background-color: transparent;background-repeat:no-repeat;
     border: none;
     cursor:pointer;
     overflow: hidden;
     outline:none;
-    color:white">Fullscreen</button>
+    color:white">Fullscreen</div>
     <!-- <button onclick="ExitFullscreen()">Exit</button> -->
 </head>
 <body>
@@ -48,7 +48,38 @@
       document.exitFullscreen();
     }    
   </script>
+  <div class="out">
    <div id = "webcam-container"></div>
-   <div class="title"id="label-container">AI Recognition</div>
+ 
+   <div class="title"id="label_container">AI Recognition</div>
+     </div>
+
+      <!-- 音檔 -->
+      <audio id="aivoice12">
+        <source src="media/ian-tshiang.mp3" type="audio/mp3">
+      </audio>
+   
+      <audio id="aivoice13">
+        <source src="media/bí-tn̂g.mp3" type="audio/mp3">
+      </audio>
+
+      <audio id="aivoice14">
+        <source src="media/tāu-kuann.mp3" type="audio/mp3">
+      </audio>
+
+      <audio id="aivoice15">
+        <source src="media/oo-lián.mp3" type="audio/mp3">
+      </audio>
+
+      
+      <audio id="aivoice16">
+        <source src="media/bí-hueh.mp3" type="audio/mp3">
+      </audio>
+      
+      
+   <!-- 聲音js -->
+    
+
+     
 </body>
 </html>
