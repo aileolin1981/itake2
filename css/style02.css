@@ -9,22 +9,47 @@ body {
     /* width: 360px; */
     height: 738px;
     position: fixed;
-    background-color: white;
+    background-color:#57BDAC;
 }
 
 #label_container {
     font-family: 'Segoe UI';
     font-size: 24px;
     font-weight: bold;
-    color: #4FB4A2;
+    color: #ffffff;
+    margin: 0px auto 0 auto;
+    text-align: center;
+    position: relative;
+    /* width: 360px; */
+    height: 40px;
+    line-height: 40px;
+}
+#label_container2{
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
     margin: 0 auto;
     text-align: center;
     position: relative;
-    bottom: 20px;
     /* width: 360px; */
-    height: 88px;
-    line-height: 88px;
-}
+    height: 45px;
+    line-height: 35px;
+   }
+
 .out{
     width: 360px;
+    background-color: #57BDAC;
+}
+#FullscreenButton{
+    width:360px;
+    height: 48px;
+    line-height: 48px;
+    margin: 0;
+    background-color:#57BDAC;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: bold;
+
 }

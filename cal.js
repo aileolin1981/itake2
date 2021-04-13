@@ -19,7 +19,7 @@ async function classification_init() {
 
     // Convenience function to setup a webcam
     const flip = true;
-    webcam = new tmImage.Webcam(650, 650, flip);
+    webcam = new tmImage.Webcam(600, 600, flip);
     await webcam.setup();
     await webcam.play();
     window.requestAnimationFrame(loop);
@@ -51,6 +51,7 @@ async function predict() {
             {
                 
                 document.getElementById("label_container").innerHTML = "ian-tshiâng"
+                document.getElementById("label_container2").innerHTML = "Sausage"
     
                 document. getElementById("aivoice12") ;
                 document. getElementsByClassName("sausage") ;
@@ -61,6 +62,7 @@ async function predict() {
             else if(prediction[i].className=="riceSausage" && value >= 0.7)
             {
                document.getElementById("label_container").innerHTML = "bí-tn̂g"
+                document.getElementById("label_container2").innerHTML = "Rice sausage"
 
                document. getElementById("aivoice13") ;
                 document. getElementsByClassName("riceSausage") ;
@@ -70,6 +72,7 @@ async function predict() {
             else if(prediction[i].className=="driedTofu" && value >= 0.7)
             {
                document.getElementById("label_container").innerHTML = "tāu-kuann"
+                  document.getElementById("label_container2").innerHTML = "Dried tofu"
 
                 document. getElementById("aivoice14") ;
                 document. getElementsByClassName("driedTofu") ;
@@ -79,16 +82,16 @@ async function predict() {
             else if(prediction[i].className=="tempura" && value >= 0.7)
             {
                 document.getElementById("label_container").innerHTML = "oo-lián"
+                 document.getElementById("label_container2").innerHTML = "Tempura"
 
                 document. getElementById("aivoice15") ;
-                document. getElementsByClassName("tempura") ;
-                // label_container.onclick = function(){
+7                // label_container.onclick = function(){
                  aivoice15.play();
             }
             else if(prediction[i].className=="bloodPudding" && value >= 0.7)
             {   
                  document.getElementById("label_container").innerHTML = "bí-hueh"
-                
+                document.getElementById("label_container2").innerHTML = "Blood pudding"
 
                 document. getElementById("aivoice16") ;
                 document. getElementsByClassName("bloodPudding") ;
@@ -98,6 +101,7 @@ async function predict() {
             else if(prediction[i].className=="other" && value >= 0.7)
             {
                 document.getElementById("label_container").innerHTML = "koh hip tsi̍t-pái"
+                 document.getElementById("label_container2").innerHTML = "Rescan"
             }
 
         // labelContainer.childNodes[i].innerHTML = classPrediction;
