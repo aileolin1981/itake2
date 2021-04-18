@@ -19,7 +19,7 @@ async function classification_init() {
 
     // Convenience function to setup a webcam
     const flip = true;
-    webcam = new tmImage.Webcam(494, 494, flip);
+    webcam = new tmImage.Webcam(500, 500, flip);
     await webcam.setup();
     await webcam.play();
     window.requestAnimationFrame(loop);
