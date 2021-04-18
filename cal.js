@@ -85,7 +85,7 @@ async function predict() {
                  document.getElementById("label_container2").innerHTML = "Tempura"
 
                 document. getElementById("aivoice15") ;
-7                // label_container.onclick = function(){
+                // label_container.onclick = function(){
                  aivoice15.play();
             }
             else if(prediction[i].className=="bloodPudding" && value >= 0.7)
