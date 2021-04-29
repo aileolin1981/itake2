@@ -18,7 +18,7 @@ async function classification_init() {
     maxPredictions = model.getTotalClasses();
 
     // Convenience function to setup a webcam
-    const flip = true;
+    const flip = false;
     webcam = new tmImage.Webcam(500, 500, flip);
     await webcam.setup();
     await webcam.play();
