@@ -20,7 +20,7 @@ async function classification_init() {
     // Convenience function to setup a webcam
     const flip = true;
     webcam = new tmImage.Webcam(500, 500, flip);
-    webcam.set('constraints',{
+    webcam.setup('constraints',{
         facingMode: "environment"
     });
     await webcam.setup();
