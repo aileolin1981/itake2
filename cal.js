@@ -7,11 +7,21 @@ classification_init();
 var enable = false;
 function StartInference() {
     enable = true;
+    document.getElementById("StartInferenceButton").style.visibility = 'hidden'
+    document.getElementById("StopInferenceButton").style.visibility = 'visible'
 }
 function StopInference() {
     enable = false;
-    document.getElementById("label_container").innerHTML = "AI Recognition"
-    document.getElementById("label_container2").innerHTML = ""
+    
+
+    document.getElementById("StartInferenceButton").style.visibility = 'visible'
+    document.getElementById("StopInferenceButton").style.visibility = 'hidden'
+
+    setTimeout(function(){ 
+        document.getElementById("label_container").innerHTML = "AI Recognition"
+        document.getElementById("label_container2").innerHTML = "" 
+    }, 1000);
+
 }
 
 // Load the image model and setup the webcam
