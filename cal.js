@@ -4,6 +4,15 @@ let model, webcam, labelContainer, maxPredictions;
 let count_value = 0;
 let one_shoot = false;
 classification_init();
+var enable = false;
+function StartInference() {
+    enable = true;
+}
+function StopInference() {
+    enable = false;
+    document.getElementById("label_container").innerHTML = "AI Recognition"
+    document.getElementById("label_container2").innerHTML = ""
+}
 
 // Load the image model and setup the webcam
 async function classification_init() {
@@ -35,7 +44,11 @@ async function classification_init() {
 
 async function loop() {
     webcam.update();
-    await predict();
+    if(enable)
+    {
+        await predict();
+    }
+    
     window.requestAnimationFrame(loop);
 }
 
